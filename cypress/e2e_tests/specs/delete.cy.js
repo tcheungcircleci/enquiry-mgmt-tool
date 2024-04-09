@@ -18,7 +18,7 @@ describe('Delete', () => {
       cy.get(details.editDetailsButton).click()
       cy.get('main form > a').eq(1).click()
       cy.get('main div strong').contains(
-        'Are you sure you want to delete this enquiry?'
+        'Some gibberish'
       )
       cy.get('main form button').contains('Delete enquiry')
       cy.get('main form button').click()
