@@ -31,7 +31,7 @@ jobs:
           command: docker-compose run --entrypoint npm cypress install date-fns
       - run:
           name: Install reporter
-          command: docker-compose run npm install cypress-circleci-reporter
+          command: docker-compose run --entrypoint npm install cypress-circleci-reporter
       - run:
           name: Run e2e tests
           # Chrome freezes when redirecting on the login page.
